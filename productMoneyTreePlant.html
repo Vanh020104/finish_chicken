@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/css/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/css/productMoneyTreePlant.css">
+ 
+    <title>Document</title>
+    <style>     /* Kiểu dáng cho nút bấm được chọn */
+        .button-selected {
+            background-color: rgb(215, 210, 210);
+        }
+        hr{
+            margin-left: 0px;
+        }
+
+        </style>
+   
+</head>
+<body>
+    <div class="container1">
+        <div class="border">
+            Plant Palace
+        </div>
+        <div class="header">
+            <div class="logo">
+                <a href="http://127.0.0.1:5501/index.html"> <img src="/image/image/logo.png" alt=""></a>
+            </div>
+            <div class="information">
+                <div class="address">
+                    <a href=""><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.0002 0.487488C6.7877 0.487488 2.5127 4.61249 2.5127 9.63749C2.5127 13.65 8.2502 20.2875 10.7252 22.9875C11.0627 23.3625 11.5127 23.55 12.0002 23.55C12.4877 23.55 12.9377 23.3625 13.2752 22.9875C15.7502 20.325 21.4877 13.65 21.4877 9.63749C21.4877 4.57499 17.2127 0.487488 12.0002 0.487488ZM12.3002 22.0875C12.1127 22.275 11.8502 22.275 11.7002 22.0875C9.8627 20.1 3.8252 13.275 3.8252 9.63749C3.8252 5.28749 7.5002 1.79999 12.0002 1.79999C16.5002 1.79999 20.1752 5.32499 20.1752 9.63749C20.1752 13.275 14.1377 20.0625 12.3002 22.0875Z" fill="#2D2A24"></path> <path d="M12.0002 5.88751C9.78769 5.88751 7.9502 7.68751 7.9502 9.93751C7.9502 12.15 9.75019 13.9875 12.0002 13.9875C14.2502 13.9875 16.0502 12.1875 16.0502 9.93751C16.0502 7.68751 14.2127 5.88751 12.0002 5.88751ZM12.0002 12.6375C10.5002 12.6375 9.2627 11.4 9.2627 9.90001C9.2627 8.40001 10.5002 7.16251 12.0002 7.16251C13.5002 7.16251 14.7377 8.40001 14.7377 9.90001C14.7377 11.4 13.5002 12.6375 12.0002 12.6375Z" fill="#2D2A24"></path></svg></a>
+                    <div class="">
+                        <a class="address-one" href="">Store Locator</a>
+                        <a class="address-two" href="">My Plant Shop</a>
+                    </div>
+                </div>
+                <div class="search">
+                    <a href=""><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.2875 21.375L16.725 16.05C17.925 14.475 18.6 12.5625 18.6 10.5375C18.6 8.10001 17.6625 5.85001 15.9375 4.12501C12.4125 0.600012 6.67505 0.600012 3.11255 4.12501C1.42505 5.81251 0.487549 8.10001 0.487549 10.5C0.487549 12.9375 1.42505 15.1875 3.15005 16.9125C4.91255 18.675 7.23755 19.575 9.56255 19.575C11.85 19.575 14.1 18.7125 15.8625 17.025L22.5 22.3875C22.6125 22.5 22.7625 22.5375 22.9125 22.5375C23.1 22.5375 23.2875 22.4625 23.4375 22.3125C23.625 22.0125 23.5875 21.6 23.2875 21.375ZM4.05005 16.0125C2.58755 14.55 1.80005 12.6 1.80005 10.5C1.80005 8.40001 2.58755 6.48751 4.08755 5.02501C5.58755 3.52501 7.57505 2.77501 9.56255 2.77501C11.55 2.77501 13.5375 3.52501 15.0375 5.02501C16.5 6.48751 17.325 8.43751 17.325 10.5C17.325 12.5625 16.4625 14.55 15 16.0125C12 19.0125 7.08755 19.0125 4.05005 16.0125Z" fill="#2D2A24"></path></svg></a>
+                    <button class="button_modal" id="openModalButton">
+                        <a class="search-one" href="">Find Product
+                        <a class="search-two" href="">Quick Search</a>
+                        </button>
+                </div>
+                <div class="signin">
+                    <div class="open-modal" id="openModalButton02">
+                        <a class="signin-one" href="">Hello, Sign In</a>
+                        <a class="signin-two" href="">Your Account</a>
+                    </div>
+                </div>
+                <div class="cart" id="cartIcon">
+                    <a href=""><svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-b22192c0=""><path d="M21.4875 7.38749H20.3625L17.8125 0.899993C17.6625 0.562493 17.2875 0.412493 16.95 0.524993C16.6125 0.674993 16.4625 1.04999 16.575 1.38749L18.9375 7.42499H5.02505L7.38755 1.38749C7.53755 1.04999 7.35005 0.674993 7.01255 0.524993C6.67505 0.374993 6.30005 0.562493 6.15005 0.899993L3.60005 7.38749H2.47505C1.91255 7.38749 1.42505 7.83749 1.42505 8.43749V11.625C1.42505 12.1875 1.87505 12.675 2.47505 12.675H2.51255L3.48755 21.225C3.63755 22.5375 4.76255 23.55 6.11255 23.55H17.8125C19.1625 23.55 20.2875 22.5375 20.4375 21.225L21.4125 12.675H21.4501C22.0126 12.675 22.5 12.225 22.5 11.625V8.43749C22.5375 7.87499 22.0875 7.38749 21.4875 7.38749ZM2.77505 8.69999H21.225V11.325H2.77505V8.69999ZM19.1625 21.0375C19.0875 21.7125 18.525 22.2 17.85 22.2H6.15005C5.47505 22.2 4.91255 21.7125 4.83755 21.0375L3.86255 12.6375H20.1376L19.1625 21.0375Z" fill="#2D2A24"></path> <path d="M8.06257 19.05C8.43757 19.05 8.73757 18.75 8.73757 18.375V15.4875C8.73757 15.1125 8.43757 14.8125 8.06257 14.8125C7.68757 14.8125 7.38757 15.1125 7.38757 15.4875V18.375C7.38757 18.75 7.68757 19.05 8.06257 19.05Z" fill="#2D2A24"></path> <path d="M15.9376 19.05C16.3126 19.05 16.6126 18.75 16.6126 18.375V15.4875C16.6126 15.1125 16.3126 14.8125 15.9376 14.8125C15.5626 14.8125 15.2626 15.1125 15.2626 15.4875V18.375C15.3001 18.75 15.6001 19.05 15.9376 19.05Z" fill="#2D2A24"></path></svg></a>
+                    <!-- cart -->
+                    <div class="modal" id="modalContainer03">
+                        <div class="modal-content05">
+                            <span class="close" id="closeModalButton03">&times;</span>
+                            <div class="modal_cart-none">
+                                <div class="your_cart">
+                                    <div class="vanh-cart">
+
+                                        <span class="your_cart-heading">Your Cart</span>
+                                        <span class="your_cart-content">Our team preps, prunes, & packs every order—lots of care goes into every step.</span>
+                                    </div>
+
+                                    <div class="cart_thanhtap"></div>
+                                </div>
+
+                                <div class="cart_comment">
+                                    <span class="cart_add">Add a gift message?</span>
+                                    <textarea class="select-vanh" id="" cols="30" rows="10" placeholder="Enter your message..."></textarea>
+                                </div>
+
+                                <!-- thanh tap -->
+                                <div class="cart_thanhtap"></div>
+                                <!-- product 1 -->
+                                <div class="cart_image">
+                                    <div class="image_product-cart">
+                                        <img src="/image/image/flower02.jpg" alt="Ảnh sản phẩm">
+                                    </div>
+                                    
+
+                                    <div id="contentDiv" class="cart_information-product">
+                                        <p class="cart_name-product">Hoya Carnosa ‘Tricolor’</p>
+                                        <span class="tree_small">Small / Hyde / Mint</span>
+                                        <span class="cart_price-product">
+                                            <p class="price_vanh-tree">$68</p> <p class="freeship_vanh-tree">Ships Free</p>
+                                        </span>
+                                        
+                                        <span class="cart_quantity-tree">
+                                            <label class="quantityInput" for="quantityInput">Quantity:</label>
+                                            <span>
+                                                <input class="cart_quantity-vanh" type="number" id="quantityInput" min="1" value="01">
+                                                <a id="hideDivLink" class="delete_product_vanh" href="">Remote</a>
+                                            </span>
+                                        </span>
+
+                                        
+                                    </div>
+                                </div>
+                        
+                                <!-- thanh tap -->
+                                <div class="cart_thanhtap"></div>
+                                
+                                <div class="cart_total">
+                                    <!-- <p  class="total_money">Subtotal: <span style="font-weight: 400;color: #666;" class="totalPrice" id="totalPrice">68</span> <span class="cart_money-dola" style="font-weight: 400; color: #666;"> US$</span></p> -->
+                                    <p id="valueToTransfer" class="total_money">Subtotal: <span style="font-weight: 400;color: #666;" class="totalPrice" id="totalPrice">68</span> <span class="cart_money-dola" style="font-weight: 400; color: #666;"> US$</span></p>
+                                    <span class="cart_ship-vanh">
+
+                                        <p class="freeship">Shipping: </p>
+                                        <span>Free</span>
+                                    </span>
+
+                                    <button><a id="goToTrang2" href="/html/pay.html">Checkout</a></button>
+                                    <!-- <button><a  href="http://127.0.0.1:5501/vanh.html">Checkout</a></button> -->
+                                    <span class="thue">Taxes calculated at checkout.</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--login  -->
+    
+    <div class="modal" id="modalContainer02">
+        <div class="modal-content-two">
+            <span class="close" id="closeModalButton02">&times;</span>
+            <span class="welcom">Welcome To Your Sill Account</span>
+            <br>
+            <span class="Log_into_your_account">Log into your account to manage orders and access online courses.</span>
+           
+            <div class="input_login">
+
+                <input type="text" id="emailInput" placeholder="Email">
+                <input type="password" id="passwordInput" placeholder="Password">
+                <button id="loginButton">Login</button>
+                <p id="errorMessage" class="error hidden">Please enter enough information.</p>
+            </div>
+            <div class="reset_pass">
+                <span>New here? <a href="">Create an account</a></span>
+                <span>Trouble logging in? <a href="">Reset password </a></span>
+            </div>
+            <div class="login__button">
+                <button>
+                    <div class="login__button-content">
+                        <span class="login__button-content-one">Plant Care Library</span>
+                        <span class="login__button-content-two">Get plant care tips for all your purchases</span>
+                    </div>
+                    <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xml:space="preserve" class="fill-current arrow inline-block ml-3 black"><path d="m61.5 28.5-6.9-8.2c-.6-.7-1.7-.8-2.5-.2-.7.6-.8 1.7-.2 2.5l6.5 7.7H3c-1 0-1.8.8-1.8 1.8S2 33.9 3 33.9h55.4l-6.5 7.7c-.6.7-.5 1.8.2 2.5.3.3.7.4 1.1.4.5 0 1-.2 1.3-.6l6.9-8.2c1.8-2.2 1.8-5.2.1-7.2z"></path></svg>
+                </button>
+
+                <button>
+                    <div class="login__button-content">
+                        <span class="login__button-content-one"> Your Order</span>
+                        <span class="login__button-content-two">Lookup status and get UPS tracking info</span>                      
+                    </div>
+                    <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xml:space="preserve" class="fill-current arrow inline-block ml-3 black"><path d="m61.5 28.5-6.9-8.2c-.6-.7-1.7-.8-2.5-.2-.7.6-.8 1.7-.2 2.5l6.5 7.7H3c-1 0-1.8.8-1.8 1.8S2 33.9 3 33.9h55.4l-6.5 7.7c-.6.7-.5 1.8.2 2.5.3.3.7.4 1.1.4.5 0 1-.2 1.3-.6l6.9-8.2c1.8-2.2 1.8-5.2.1-7.2z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+    <div id="modalContainer" class="modal-container">
+        <div id="modalContent" class="modal-content">
+            <span id="closeModalButton" class="close">&times;</span>
+            <h2>Search</h2>
+            <input type="text" placeholder="Search The Sill..."> <br>
+            <!-- <button>Search!</button> -->
+            <div class="search_popular">
+                <span>Popular Searches</span>
+                <div class="serach_popular-menu">
+                    <div class="search_vanh-one">
+
+                        <a href="/html/tree.html">Trees</a>
+                           <a href="/html/flowers&bouquets.html">Flower</a>
+                          <a href="/html/store.html">Event</a>  
+                           <a href="/html/plancare.html">Plant Care</a> 
+                    </div>
+                    <div class="search_vanh-one">
+
+                        <a href="">Filter</a>  
+                        <a href="">Register</a>  
+                        <a href="/html/information.html">Tree Information</a>      
+                    </div>
+                </div>
+                <div class="image-modal">
+                    <img src="/image/image/7.jpg" alt="">
+                    <img src="/image/image/anh14.webp" alt="">
+                    <img src="/image/image/flower03.jpg" alt="">
+                  </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- end -->
+        <!-- menu -->
+        <div class="menu">
+            <div class="menu_list">
+                <a href="/html/tree.html">Trees</a>
+            </div>
+            <div class="menu_list">
+                <a href="/html/flowers&bouquets.html">Flower</a>
+            </div>
+            <div class="menu_list">
+                <a href="/html/information.html">Tree information</a>
+            </div>
+            <div class="menu_list">
+                <a href="/html/plancare.html">Plant Care</a>
+            </div>
+            <div class="menu_list">
+                <a href="">Filter</a>
+            </div>
+            <div class="menu_list">
+                <a href="">Register</a>
+            </div>
+            <div class="menu_list">
+                <a href="/html/store.html">Event</a>
+            </div>
+        </div>
+    <div class="pncmg">
+        <div class="pncproductinformation">
+            <div class="pncimgproduct">  
+                <img style="margin-bottom: 12px;" class="pncimgproductmini" src="/image/image/imgproduct/imgprd1.png" alt="">
+                <img  style="margin-bottom: 12px;"class="pncimgproductmini" src="/image/image/imgproduct/imgprd2.png" alt="">
+                <img class="pncimgproductmini"  style="margin-bottom: 12px;" src="/image/image/imgproduct/imgprd3.png" alt="">
+                <img class="pncimgproductmini"  style="margin-bottom: 12px;" src="/image/image/imgproduct/imgprd4.png" alt="">
+            </div>
+            <div class="pncimgproductbig">
+
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                    </div>
+                  
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/image/image/imgproduct/imgprd1.png" alt="Los Angeles" class="d-block w-100" id="imgslidefl">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/image/image/imgproduct/imgprd2.png" alt="Chicago" class="d-block w-100" id="imgslidefl">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/image/image/imgproduct/imgprd3.png" alt="New York" class="d-block w-100" id="imgslidefl">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/image/image/imgproduct/imgprd4.png" alt="New York" class="d-block w-100" id="imgslidefl">
+                      </div>
+                    </div>
+                  
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </button>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="pncdetails">
+                <p class="pncnameproduct">Money Tree Plant</p>
+                <div class="pncprprd">
+                    <div class="pncpriceproduct">$48 </div>
+                    <div class="pncplantonly"><i class="fa-solid fa-circle-info"></i> Plant Only</div>
+
+                </div>
+                
+                <hr color="#dddddd" size="0" style="margin-top: 20px;">
+                <p style="font-size: 20px; margin-top: 10px; margin-bottom: 15px;">Size : </p>
+                <div class="pncbuttonsize">
+                    <button id="chonCai11" class="pncbutton" onclick="chonCai1(1)">Small</button>
+                    <button id="chonCai12" class="pncbutton" onclick="chonCai1(2)">Large</button>
+                    <p id="thongTinLuaChon1"></p>
+
+                </div>
+                <p style="font-size: 20px;margin-top: 10px; margin-bottom: 15px;">Planter :</p>
+                <div class="pncbuttonclanter">
+                    <button id="chonCai3" class="pncbutton" onclick="chonCai(3)"> <img src="https://cdn.sanity.io/images/y346iw48/production/916deb2f62c84451e94a53b9dd5e89b38bb1dc65-48x48.svg?auto=format" class="block w-full w-5 h-5" style="width: 15px; margin-right: 6px;margin-top: -7px;">Grown Pot</button>
+                    <button id="chonCai4" class="pncbutton" onclick="chonCai(4)"> <img src="https://cdn.sanity.io/images/y346iw48/production/46c4265f0ab703a070d07ee745fa1e3aefe6095c-43x48.svg?auto=format" class="block w-full w-5 h-5" style="width: 15px; margin-right: 6px;margin-top: -7px;">Marianne</button>
+                    <p id="thongTinLuaChon"></p>
+                </div>
+                <div class="pncaddcard">
+                    <div class="pncbuttonaddtocard">
+                        <button class="pncbtaddtocard" onclick="send()" >Add To Cart</button>
+                    </div>
+                    <div class="pncsoluongprd">Quantity:  <input id="qty" style="width: 70px;height: 30px;margin-top: -8px;margin-left: 8px; padding: 0 10px;" min="1" type="number" value="1"></div>
+                </div>
+                <hr color="#dddddd" size="0" style="margin-top: 40px;">
+                <div class="ttc1">
+                    Description
+                </div>
+                <div class="ttct1">
+                   <p >Said to bring good luck and fortune, the Money Tree is the perfect plant to add to any room of your home to create good Feng Shui. It is known for its resilience, ease of growth, and fun braided trunk.</p>
+                   <p > <i class="fa-solid fa-arrow-right"></i> Each plant is unique; size and shape fluctuate by season so all measurements are shown as a range</p>
+                    <p ><i class="fa-solid fa-arrow-right"></i> Small plant measures between 12–16" tall from the soil line to the top of the foliage</p>
+                    <p><i class="fa-solid fa-arrow-right"></i>Arrives in a nursery grow pot nestled in your planter choice</p>
+              </div>
+              <hr color="#dddddd" size="0" style="margin-top: 20px;">
+
+              <div class="ttc2">
+                <svg width="29" height="32" viewBox="0 0 29 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_211_463)"> <path d="M6.85047 19H20.8505C20.9333 18.9973 21.0156 19.0145 21.0905 19.05C21.1666 19.0814 21.2349 19.1292 21.2905 19.19C21.3421 19.2564 21.3826 19.3307 21.4105 19.41C21.4254 19.4893 21.4254 19.5707 21.4105 19.65L20.1305 29.94C20.1087 30.0777 20.0419 30.2043 19.9405 30.3C19.8304 30.39 19.6927 30.4395 19.5505 30.44H7.94047C7.79635 30.4402 7.65732 30.3867 7.55047 30.29C7.49592 30.244 7.45103 30.1876 7.41842 30.124C7.38581 30.0605 7.36611 29.9912 7.36047 29.92L6.27047 19.58C6.25099 19.5012 6.25099 19.4188 6.27047 19.34C6.30074 19.268 6.34115 19.2006 6.39047 19.14C6.44603 19.0792 6.51432 19.0314 6.59047 19C6.67534 18.975 6.76561 18.975 6.85047 19Z" stroke="#2D2A24" stroke-width="1.35" stroke-miterlimit="10" stroke-linecap="round"></path> <path d="M1.13047 2.11999C2.48047 1.66999 12.3905 -1.00001 13.6805 11.29C13.6805 11.39 13.7805 11.29 13.6805 11.29C12.2205 11.72 1.55047 14.56 0.980469 2.28999C0.982117 2.25909 0.988875 2.22868 1.00047 2.19999C1.02725 2.16186 1.06594 2.13372 1.11047 2.11999H1.13047Z" stroke="#2D2A24" stroke-width="1.35" stroke-miterlimit="10" stroke-linecap="round"></path> <path d="M1 2.32999L13.7 11.33V19" stroke="#2D2A24" stroke-width="1.35" stroke-miterlimit="10" stroke-linecap="round"></path> <path d="M28.0002 5.91002C27.7202 7.30002 25.2402 17.52 13.9302 12.46C13.8883 12.4412 13.8534 12.4097 13.8302 12.37C13.8157 12.3245 13.8157 12.2755 13.8302 12.23C14.1702 10.75 17.0002 0.0800153 27.9202 5.69002C27.9541 5.71273 27.9817 5.7437 28.0002 5.78002C28.0147 5.82214 28.0147 5.86789 28.0002 5.91002V5.91002Z" stroke="#2D2A24" stroke-width="1.35" stroke-miterlimit="10" stroke-linecap="round"></path> <path d="M27.9201 5.67999L13.8301 12.23" stroke="#2D2A24" stroke-width="1.35" stroke-miterlimit="10" stroke-linecap="round"></path> </g> <defs> <clipPath id="clip0_211_463"> <rect width="29" height="32" fill="white"></rect> </clipPath> </defs> </svg>
+                Care Guide
+
+              </div>
+              <div class="ttct2">
+                Thrives in bright indirect to medium light.
+
+Water every 1-2 weeks, allowing soil to dry out between waterings. Expect to water more often in brighter light and less often in lower light.
+
+This is a pet friendly plant.
+
+According to lore, a poor farmer had such great luck selling these hardy plants that he called them good fortune or good luck money trees.
+              </div>
+              <hr color="#dddddd" size="0" style="margin-top: 20px;">
+              <div class="ttc3" style="display: flex;">
+                <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M19.7793 9.14999H4.2207V19.275H19.7793V9.14999Z" stroke="#2D2A24" stroke-width="0.6"></path> <path d="M20.8551 5.47501H3.22754V9.15001H20.8551V5.47501Z" stroke="#2D2A24" stroke-width="0.6"></path> <path d="M12 5.02499V19.425" stroke="#2D2A24" stroke-width="0.6"></path> <path d="M11.8345 5.02501C11.9363 3.90509 12.3965 2.83643 13.1586 1.95001C13.9862 1.20001 15.7241 0.675014 16.469 1.35001C16.644 1.52527 16.7755 1.73258 16.8545 1.9579C16.9335 2.18322 16.9581 2.42128 16.9267 2.65598C16.8953 2.89068 16.8087 3.11652 16.6726 3.31821C16.5365 3.51991 16.3541 3.69274 16.1379 3.82501C15.2276 4.50001 11.8345 5.02501 11.8345 5.02501Z" stroke="#2D2A24" stroke-width="0.6"></path> <path d="M12 5.02501C11.7383 3.94982 11.3784 2.89619 10.9241 1.87501C10.4276 0.900013 8.44137 0.450013 7.69654 1.12501C7.51267 1.29025 7.3698 1.48914 7.27748 1.70839C7.18516 1.92764 7.14551 2.16222 7.16117 2.39646C7.17684 2.63071 7.24746 2.85923 7.36832 3.06677C7.48918 3.27432 7.65751 3.45611 7.86206 3.60001C8.68965 4.27501 12 5.02501 12 5.02501Z" stroke="#2D2A24" stroke-width="0.6"></path> </svg>
+                <p style="margin-top: -4px; margin-left: 5px;">Sending A Gift?</p>
+              </div>
+              <div class="ttct3">
+                First, lucky them! Second, in the cart, before checkout, you’ll find an option to add a gift note. You can rest assured that all orders are shipped without pricing information and include directions on how to access our digital Care Library for plant care instructions.
+                You can also let your gift recipient know something is on the way from yours truly by filling out this form – also linked in your order confirmation email. (Don’t worry, we won’t spoil what the surprise is or send them any marketing emails.)
+              </div>
+              <hr color="#dddddd" size="0" style="margin-top: 20px;">
+
+              <div class="ttc4" style="display: flex;">
+                <svg width="29" height="32" viewBox="0 0 29 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.4998 29.2C21.79 29.2 27.6998 23.2901 27.6998 16C27.6998 8.70983 21.79 2.79999 14.4998 2.79999C7.20965 2.79999 1.2998 8.70983 1.2998 16C1.2998 23.2901 7.20965 29.2 14.4998 29.2Z" stroke="#2D2A24" stroke-width="1.42" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M22.5 17.9C22.1862 19.8028 21.2039 21.5312 19.7296 22.7744C18.2553 24.0176 16.3858 24.694 14.4573 24.682C12.5288 24.6699 10.6679 23.9702 9.20929 22.7087C7.75064 21.4471 6.78995 19.7066 6.5 17.8" stroke="#2D2A24" stroke-width="1.42" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M9.2002 13.2C10.0286 13.2 10.7002 12.5284 10.7002 11.7C10.7002 10.8716 10.0286 10.2 9.2002 10.2C8.37177 10.2 7.7002 10.8716 7.7002 11.7C7.7002 12.5284 8.37177 13.2 9.2002 13.2Z" fill="#2D2A24"></path> <path d="M19.7998 13.2C20.6282 13.2 21.2998 12.5284 21.2998 11.7C21.2998 10.8716 20.6282 10.2 19.7998 10.2C18.9714 10.2 18.2998 10.8716 18.2998 11.7C18.2998 12.5284 18.9714 13.2 19.7998 13.2Z" fill="#2D2A24"></path> </svg>
+                <p style="margin-left: 5px; margin-top: 1px;">Our Guarantee</p>
+              </div>
+              <div class="ttct4">
+                Your plants will arrive in happy, healthy condition—guaranteed. If not, we replace them for free.
+
+Simply reach out to us with a photo within 30 days of receiving your order.
+              </div>
+              <hr color="#dddddd" size="0" style="margin-top: 20px;">
+              <div class="ttc5" style="display: flex;">
+                <svg width="29" height="32" viewBox="0 0 29 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_211_462)"> <path d="M28.6 7H0.5V25H28.6V7Z" stroke="#2D2A24" stroke-width="0.93" stroke-miterlimit="10" stroke-linecap="round"></path> <path d="M28.2002 9.79999H12.7002" stroke="#2D2A24" stroke-width="0.93" stroke-miterlimit="10" stroke-linecap="round"></path> <path d="M28.2002 12.9H12.7002" stroke="#2D2A24" stroke-width="0.93" stroke-miterlimit="10" stroke-linecap="round"></path> <path d="M28.2002 16.1H12.7002" stroke="#2D2A24" stroke-width="0.93" stroke-miterlimit="10" stroke-linecap="round"></path> <path d="M28.1996 19.2H0.599609" stroke="#2D2A24" stroke-width="0.93" stroke-miterlimit="10" stroke-linecap="round"></path> <path d="M28.1996 22.2H0.599609" stroke="#2D2A24" stroke-width="0.93" stroke-miterlimit="10" stroke-linecap="round"></path> <path d="M9.6 10.3C9.93137 10.3 10.2 10.0314 10.2 9.70001C10.2 9.36863 9.93137 9.10001 9.6 9.10001C9.26863 9.10001 9 9.36863 9 9.70001C9 10.0314 9.26863 10.3 9.6 10.3Z" fill="#2D2A24"></path> <path d="M9.6 13.5C9.93137 13.5 10.2 13.2314 10.2 12.9C10.2 12.5686 9.93137 12.3 9.6 12.3C9.26863 12.3 9 12.5686 9 12.9C9 13.2314 9.26863 13.5 9.6 13.5Z" fill="#2D2A24"></path> <path d="M6.3002 10.3C6.63157 10.3 6.9002 10.0314 6.9002 9.70001C6.9002 9.36863 6.63157 9.10001 6.3002 9.10001C5.96882 9.10001 5.7002 9.36863 5.7002 9.70001C5.7002 10.0314 5.96882 10.3 6.3002 10.3Z" fill="#2D2A24"></path> <path d="M6.3002 13.5C6.63157 13.5 6.9002 13.2314 6.9002 12.9C6.9002 12.5686 6.63157 12.3 6.3002 12.3C5.96882 12.3 5.7002 12.5686 5.7002 12.9C5.7002 13.2314 5.96882 13.5 6.3002 13.5Z" fill="#2D2A24"></path> <path d="M3.00039 10.3C3.33176 10.3 3.60039 10.0314 3.60039 9.70001C3.60039 9.36863 3.33176 9.10001 3.00039 9.10001C2.66902 9.10001 2.40039 9.36863 2.40039 9.70001C2.40039 10.0314 2.66902 10.3 3.00039 10.3Z" fill="#2D2A24"></path> <path d="M3.00039 13.5C3.33176 13.5 3.60039 13.2314 3.60039 12.9C3.60039 12.5686 3.33176 12.3 3.00039 12.3C2.66902 12.3 2.40039 12.5686 2.40039 12.9C2.40039 13.2314 2.66902 13.5 3.00039 13.5Z" fill="#2D2A24"></path> <path d="M9.6 16.7C9.93137 16.7 10.2 16.4314 10.2 16.1C10.2 15.7686 9.93137 15.5 9.6 15.5C9.26863 15.5 9 15.7686 9 16.1C9 16.4314 9.26863 16.7 9.6 16.7Z" fill="#2D2A24"></path> <path d="M6.3002 16.7C6.63157 16.7 6.9002 16.4314 6.9002 16.1C6.9002 15.7686 6.63157 15.5 6.3002 15.5C5.96882 15.5 5.7002 15.7686 5.7002 16.1C5.7002 16.4314 5.96882 16.7 6.3002 16.7Z" fill="#2D2A24"></path> <path d="M3.00039 16.7C3.33176 16.7 3.60039 16.4314 3.60039 16.1C3.60039 15.7686 3.33176 15.5 3.00039 15.5C2.66902 15.5 2.40039 15.7686 2.40039 16.1C2.40039 16.4314 2.66902 16.7 3.00039 16.7Z" fill="#2D2A24"></path> </g> <defs> <clipPath id="clip0_211_462"> <rect width="29" height="32" fill="white"></rect> </clipPath> </defs> </svg>
+                <p style="margin-left: 10px; margin-top: -0px;">Free Shipping</p>
+              </div>
+              <div class="ttct5">
+                We are committed to reducing our environmental footprint. Nearly all packages ship FREE via UPS® carbon neutral shipping. This means we (not you) pay a contractual rate per package that ensures we offset our shipping footprint and reduce our annual emissions as a company. View our full shipping policy. </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <span class="arrivals_product-flower" >Flowering Plants</span>
+        <div class="arrivals">
+             <!-- plant 1 -->
+             <div class="list_product">
+                 <a href=""><img src="/image/image/flower01.webp" alt=""></a>
+                 <div class="arrivals_information">
+                     <a href=""><span class="arrivals_information-one">Moonshine Snake Plant</span></a>
+                    <a href=""> <span class="arrivals_information-mota">Choose your planter style and color</span></a>
+                    <a href=""  class="arrivals_information-price"> <span>$48-$78</span></a>
+                 </div>
+                  <!-- hover view -->
+                  <div class="view_detail">
+                     <a href=""><button>View Details</button></a>
+                 </div>
+             </div>
+             <!-- plant 2 -->
+             <div class="list_product">
+                 <a href=""><img src="/image/image/flower02.jpg" alt=""></a>
+                 <div class="arrivals_information">
+                     <a href=""><span class="arrivals_information-one">Moonshine Snake Plant</span></a>
+                    <a href=""> <span class="arrivals_information-mota">Choose your planter style and color</span></a>
+                    <a href=""  class="arrivals_information-price"> <span>$48-$78</span></a>
+                 </div>
+                  <!-- hover view -->
+                  <div class="view_detail">
+                     <a href=""><button>View Details</button></a>
+                 </div>
+             </div>
+             <!-- plant 3 -->
+             <div class="list_product">
+                 <a href=""><img src="/image/image/flower03.jpg" alt=""></a>
+                 <div class="arrivals_information">
+                     <a href=""><span class="arrivals_information-one">Moonshine Snake Plant</span></a>
+                    <a href=""> <span class="arrivals_information-mota">Choose your planter style and color</span></a>
+                    <a href=""  class="arrivals_information-price"> <span>$48-$78</span></a>
+                 </div>
+                  <!-- hover view -->
+                  <div class="view_detail">
+                     <a href=""><button>View Details</button></a>
+                 </div>
+             </div>
+             <!-- plant 4 -->
+             <div class="list_product">
+                 <a href=""><img src="/image/image/flower04.webp" alt=""></a>
+                 <div class="arrivals_information">
+                    <a href=""><span class="arrivals_information-one">Moonshine Snake Plant</span></a>
+                    <a href=""> <span class="arrivals_information-mota">Choose your planter style and color</span></a>
+                    <a href=""   class="arrivals_information-price"> <span>$48-$78</span></a>
+                 </div>
+                 <!-- hover view -->
+                 <div class="view_detail">
+                     <a href=""><button>View Details</button></a>
+                 </div>
+             </div>
+             <!-- end product -->
+
+        </div>
+        <div class="pncinformationMoneyTree">
+            <div class="imgnuirung">
+                <img width="600px" src="/image/image/imgproduct/Screenshot 2023-08-10 153343.png" alt="">
+
+            </div>
+            <div class="pnctttMoneyTree">
+                <p style="font-size: 48px;">Money Tree</p>
+                <p style="font-size: 16px; margin-top: px;">Pachira</p>
+                <p style="font-size: 18px; margin-top: px;">Tropical Americas</p>
+                <p style="font-size: 20px;">Pachira is a genus of evergreen tropical trees native to the neotropics. They belong to the family Malvaceae, the cotton and hibiscus family. This plant seems to come to the houseplant world in a fog of mystery. Known by many names — money tree, water chestnut, guinea nut, and so many more — this plant seems to have found its way into every plant shop around. Like any plant that’s bred for commercial or ornamental purposes, one of the key features of a wanted plant is a plant that is prolific, easy to grow, and tolerant of varying conditions. These plants are actually quite weedy in the tropics, often being grown as erosion-control trees.</p>
+                <a style="color: rgb(107, 100, 100); text-decoration: none;font-size: 22px;" href="#"><p>Money Tree Plant Care <i class="fa-solid fa-arrow-right"></i></p></a>
+            </div>
+        </div>
+    </div>
+    <p class="comment_and_rating">COMMENTS AND RATINGS</p>
+    <div class="comment-section">
+  
+      <div class="comment-container">
+          <!-- user 1 -->
+        <div class="comment">
+          <i class="fa fa-user user-icon"></i>
+          <div class="comment-info">
+            <span class="username">John:</span>
+            <span class="comment-text">I like this product.</span>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+          </div>
+        </div>
+        <!-- user 2 -->
+        <div class="comment">
+          <i class="fa fa-user user-icon"></i>
+          <div class="comment-info">
+            <span class="username">Lisa:</span>
+            <span class="comment-text">This product is not so great.</span>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+          </div>
+        </div>
+        <!-- user 3 -->
+        <div class="comment">
+          <i class="fa fa-user user-icon"></i>
+          <div class="comment-info">
+            <span class="username">Perter:</span>
+            <span class="comment-text">This product is very good and very beautiful.
+               Should buy it everyone.</span>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <hr style=" margin: 0 100px;
+      max-width: 100%;">
+      <div class="vanh__comment">
+          <form id="comment-form">
+              <label for="">Name:</label> <br>
+              <input class="username-input" type="text" id="username-input" placeholder="Your name">
+              <br>
+              <label for="">Comments:</label> <br>
+              <input class="username-input" type="text" id="comment-input" placeholder="Add a comment...">
+            <br>
+            <select class="username-input" id="rating-input" class="rating-input">
+              <option value=""> Rate this product</option>
+              <option value="5">5 stars</option>
+              <option value="4">4 stars</option>
+              <option value="3">3 stars</option>
+              <option value="2">2 stars</option>
+              <option value="1">1 star</option>
+            </select>
+            <br>
+            <button type="submit" id="submit-btn">Comment</button>
+          </form>
+      </div>
+    </div>
+    
+        <!-- footer -->
+
+        <div class="footer1">
+            <div class="footer__top">
+                <div class="footer_img">
+                    <img src="/image/image/anh5.webp" alt="">
+                </div>
+                <div class="vanh__footer">
+                    <span class="vanh__footer-heading">Visit Us In A Store Near You</span>
+                    <span class="vanh__footer-content">Our stores around the US are open for plant shopping, repotting, curbside pickup,<br> in-person workshops, and more.</span>
+                    <a href="">Find Your Local Store <svg version="1.1" id="lni_lni-arrow-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64" xml:space="preserve"> <path d="M61.5,28.5l-6.9-8.2c-0.6-0.7-1.7-0.8-2.5-0.2c-0.7,0.6-0.8,1.7-0.2,2.5l6.5,7.7H3c-1,0-1.8,0.8-1.8,1.8
+                        c0,1,0.8,1.8,1.8,1.8h55.4l-6.5,7.7c-0.6,0.7-0.5,1.8,0.2,2.5c0.3,0.3,0.7,0.4,1.1,0.4c0.5,0,1-0.2,1.3-0.6l6.9-8.2
+                        C63.2,33.5,63.2,30.5,61.5,28.5z"></path> </svg></a>
+                </div>
+            </div>
+            <div class="border_footer"></div>
+            <!--  -->
+
+            <div class="footer__finish">
+                <div class="footer__finish-menu-one">
+                    <span>Explore</span>
+                    <a href="/html/tree.html">Trees</a>
+               <a href="/html/flowers&bouquets.html">Flower</a>
+              <a href="/html/store.html">Event</a>  
+               <a href="/html/plancare.html">Plant Care</a> 
+              <a href="">Filter</a>  
+              <a href="">Register</a>  
+              <a href="/html/information.html">Tree Information</a>                  
+                </div>
+
+                <!--  -->
+
+                <div class="footer__finish-menu-two">
+                    <span>Customer Service</span>
+                    <a href="">Connect</a>
+                       <a href="">Blog</a>
+                      <a href="">Tree information</a>  
+                       <a href="">30-Day Guarantee</a> 
+                      <a href="">Finf Your Store</a>  
+                      <a href="">Our Story</a>  
+                      <a href="">Shipping & Handling</a>               
+                </div>
+
+                <!--  -->
+
+                <div class="my_account">
+                    <div class="my_account-big">
+
+                        <span class="my_account-heading">Get the Dirt.</span>
+                        <span class="my_account-content">Get plant care tips, exclusive offers, & event invites straight to your inbox. No spam, ever.</span>
+                    </div>
+                    <form id="myForm">
+                        <input type="text" id="email" placeholder="Enter Your Email Here...">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <div id="error-message" class="hidden">Invalid Email Address!</div>
+                    <div id="success-message" class="success">You’re on the list!</div>
+
+                     <!--  icon-->
+                <div class="socials flex flex-row">
+                    <a target="_blank" href="https://www.facebook.com/TheSillNYC/" class="text-black hover:text-primary inline-block mr-6">
+                        <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_406_3126)">
+                                <path d="M5.4798 18H1.8266V9.00441H0V5.90005H1.8266V4.0392C1.8266 1.50808 2.85677 0 5.79145 0H8.22403V3.10436H6.70042C5.56637 3.10436 5.48846 3.5365 5.48846 4.34787V5.90005H8.25L7.9297 9.00441H5.4798V18Z" fill="currentColor"></path></g>
+                                <defs><clipPath id="clip0_406_3126"><rect width="8.25" height="18" fill="white"></rect></clipPath></defs></svg></a>
+                                <a target="_blank" href="https://twitter.com/thesill" class="text-black hover:text-primary inline-block mr-6">
+                                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_406_3128)">
+                                        <path d="M18.2416 3.27394C17.5649 3.57799 16.8486 3.77984 16.1151 3.87317C16.8857 3.39665 17.4623 2.65199 17.7393 1.77584C17.0143 2.2212 16.2178 2.53134 15.3867 2.69182C14.8801 2.14087 14.2236 1.7578 13.502 1.59203C12.7804 1.42625 12.0268 1.48539 11.3383 1.7618C10.6499 2.03821 10.0583 2.51921 9.63977 3.14275C9.22128 3.76629 8.99511 4.50375 8.99047 5.25998C8.99224 5.54781 9.0231 5.83469 9.08256 6.11603C7.61258 6.03923 6.17478 5.64747 4.86233 4.96616C3.54989 4.28484 2.39209 3.32917 1.46395 2.16107C1.1128 2.74243 0.927243 3.41244 0.92814 4.09575C0.931467 4.72133 1.0861 5.33635 1.37825 5.886C1.6704 6.43566 2.09099 6.90288 2.60256 7.24603C2.0157 7.22777 1.44161 7.06634 0.92814 6.7752V6.818C0.927235 7.69215 1.22304 8.53953 1.76506 9.21553C2.30708 9.89153 3.06174 10.3542 3.90023 10.5247C3.58182 10.6181 3.25194 10.6642 2.9207 10.6617C2.68752 10.6605 2.45492 10.6376 2.22581 10.5932C2.46168 11.3455 2.92194 12.0035 3.54204 12.4748C4.16213 12.9461 4.91096 13.2072 5.68349 13.2213C4.37136 14.2708 2.75311 14.8404 1.08721 14.8392C0.807423 14.838 0.527921 14.8209 0.25 14.7879C1.93919 15.9035 3.90697 16.4979 5.91791 16.5C7.30029 16.5034 8.66962 16.2265 9.94669 15.6854C11.2238 15.1442 12.3832 14.3495 13.358 13.3472C14.3327 12.345 15.1035 11.155 15.6256 9.84619C16.1477 8.53738 16.4108 7.13571 16.3998 5.72225C16.3998 5.5596 16.3998 5.39695 16.3998 5.2343C17.1226 4.69505 17.7486 4.03178 18.25 3.27394" fill="currentColor"></path></g>
+                                        <defs><clipPath id="clip0_406_3128"><rect width="18" height="18" fill="white" transform="translate(0.25)"></rect></clipPath></defs></svg></a><a target="_blank" href="https://www.instagram.com/thesill/" class="text-black hover:text-primary inline-block mr-6"><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_406_3130)"><path d="M11.8327 2.28612C12.3545 2.28927 12.8716 2.38492 13.36 2.56862C13.7203 2.70005 14.0463 2.91132 14.3134 3.1866C14.5867 3.45195 14.7977 3.77456 14.9314 4.13122C15.1287 4.62038 15.2393 5.1402 15.258 5.66734C15.258 6.55016 15.3022 6.79735 15.3022 8.99559C15.3022 11.1938 15.3022 11.4587 15.258 12.3327C15.2549 12.8545 15.1592 13.3716 14.9755 13.86C14.839 14.2178 14.6285 14.5427 14.3577 14.8135C14.0869 15.0843 13.7619 15.2949 13.4041 15.4314C12.9157 15.6151 12.3986 15.7107 11.8768 15.7139C10.994 15.7139 10.7468 15.758 8.53973 15.758C6.33266 15.758 6.0325 15.758 5.16734 15.758C4.64282 15.7533 4.12308 15.6578 3.63122 15.4755C3.27456 15.3418 2.95195 15.1308 2.6866 14.8575C2.41132 14.5904 2.20005 14.2645 2.06862 13.9041C1.88492 13.4157 1.78927 12.8986 1.78612 12.3768C1.74197 11.494 1.73315 11.2468 1.73315 9.03973C1.73315 6.83266 1.73315 6.57665 1.78612 5.71148C1.79079 5.18696 1.88638 4.66722 2.06862 4.17536C2.2023 3.8187 2.41335 3.49609 2.6866 3.23074C2.95195 2.95749 3.27456 2.74644 3.63122 2.61276C4.12308 2.43052 4.64282 2.33493 5.16734 2.33026C6.05016 2.28612 8.49559 2.27729 8.49559 2.27729C8.49559 2.27729 11.3731 2.25826 11.8327 2.28612ZM5.09671 0.802969C4.41199 0.814788 3.7343 0.987303 3.0927 1.22673C2.54812 1.42302 2.05156 1.733 1.63604 2.13604C1.21709 2.54731 0.891861 3.04418 0.682584 3.5927C0.443162 4.2343 0.314788 4.91199 0.302969 5.59671C0.25 6.47953 0.25 6.76204 0.25 8.99559C0.25 11.2291 0.25 11.5205 0.302969 12.4033C0.313705 13.0852 0.44213 13.7602 0.682584 14.3985C0.889464 14.9508 1.21492 15.451 1.63604 15.864C2.04731 16.2829 2.54418 16.6081 3.0927 16.8174C3.7343 17.0568 4.41199 17.1852 5.09671 17.197C5.97953 17.2412 6.26204 17.25 8.49559 17.25C10.7291 17.25 11.0205 17.25 11.9033 17.197C12.5852 17.1863 13.2602 17.0579 13.8985 16.8174C14.4482 16.6054 14.9474 16.2807 15.3641 15.8641C15.7807 15.4474 16.1054 14.9482 16.3174 14.3985C16.5579 13.7602 16.6863 13.0852 16.697 12.4033C16.7412 11.5205 16.75 11.238 16.75 8.99559C16.75 6.75321 16.75 6.47953 16.697 5.59671C16.6852 4.91199 16.5568 4.2343 16.3174 3.5927C16.1081 3.04418 15.7829 2.54731 15.364 2.13604C14.951 1.71492 14.4508 1.38946 13.8985 1.18258C13.2602 0.94213 12.5852 0.813705 11.9033 0.802969C11.0205 0.75 8.49559 0.75 8.49559 0.75" fill="currentColor"></path>
+                                            <path d="M8.49537 4.76688C7.65688 4.76688 6.83724 5.01564 6.14019 5.48166C5.44313 5.94768 4.9 6.61002 4.57953 7.38484C4.25906 8.15967 4.17566 9.01216 4.33989 9.8344C4.50411 10.6566 4.90858 11.4117 5.50209 12.004C6.09561 12.5963 6.8515 12.9991 7.67408 13.1617C8.49667 13.3242 9.34898 13.239 10.1231 12.9169C10.8973 12.5948 11.5585 12.0503 12.0231 11.3523C12.4876 10.6543 12.7347 9.8341 12.7329 8.99561C12.7341 8.43922 12.6252 7.88808 12.4126 7.37392C12.1999 6.85977 11.8877 6.39274 11.4938 5.99972C11.1 5.60669 10.6323 5.29544 10.1177 5.08386C9.60312 4.87228 9.05176 4.76455 8.49537 4.76688ZM8.49537 11.75C7.95059 11.75 7.41806 11.5885 6.96509 11.2858C6.51213 10.9832 6.15909 10.553 5.95062 10.0497C5.74214 9.54638 5.6876 8.99256 5.79388 8.45825C5.90016 7.92395 6.16249 7.43316 6.5477 7.04795C6.93291 6.66274 7.4237 6.40041 7.95801 6.29413C8.49231 6.18785 9.04613 6.24239 9.54943 6.45087C10.0527 6.65934 10.4829 7.01238 10.7856 7.46534C11.0882 7.9183 11.2498 8.45084 11.2498 8.99561C11.2498 9.72613 10.9596 10.4267 10.443 10.9433C9.92648 11.4598 9.22588 11.75 8.49537 11.75Z" fill="currentColor"></path><path d="M13.8896 4.59909C13.8879 4.79427 13.8284 4.98456 13.7187 5.14599C13.609 5.30743 13.454 5.43279 13.2731 5.50627C13.0923 5.57976 12.8938 5.59808 12.7026 5.55894C12.5114 5.5198 12.336 5.42494 12.1986 5.28631C12.0612 5.14769 11.9679 4.9715 11.9305 4.77994C11.893 4.58838 11.9131 4.39003 11.9882 4.20987C12.0633 4.02971 12.19 3.87581 12.3524 3.76754C12.5148 3.65928 12.7057 3.60151 12.9008 3.6015C13.0314 3.6015 13.1607 3.62736 13.2813 3.6776C13.4018 3.72784 13.5112 3.80147 13.6031 3.89422C13.6951 3.98697 13.7677 4.09701 13.8169 4.218C13.866 4.33898 13.8908 4.46851 13.8896 4.59909Z" fill="currentColor"></path></g><defs><clipPath id="clip0_406_3130"><rect width="16.5" height="18" fill="white" transform="translate(0.25)"></rect></clipPath></defs></svg></a><a target="_blank" href="https://www.pinterest.com/thesillnyc/" class="text-black hover:text-primary inline-block mr-6"><svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_406_3137)"><path d="M6.38449 11.9047C5.90434 14.3794 5.31641 16.7193 3.58199 18C3.04305 14.2542 4.37571 11.4425 4.98324 8.4574C3.90536 6.74339 5.08123 3.22871 7.29579 4.08571C10.0199 5.14493 4.93425 10.5373 8.35408 11.2114C11.7739 11.8854 13.3711 5.14493 11.1566 2.93983C7.96212 -0.247453 1.86718 2.89169 2.6217 7.41744C2.79808 8.53443 3.97395 8.87146 3.08225 10.4121C1.04407 9.96919 0.436532 8.38037 0.505124 6.27156C0.625473 4.68298 1.31446 3.18763 2.4499 2.0507C3.58534 0.913776 5.09383 0.208757 6.70786 0.0606829C10.5588 -0.363005 14.1649 1.4473 14.6646 5.01012C15.2329 9.02553 12.9302 13.3683 8.78523 13.0506C7.69755 12.9735 7.237 12.4247 6.38449 11.9047Z" fill="currentColor"></path></g><defs><clipPath id="clip0_406_3137"><rect width="14.25" height="18" fill="white" transform="translate(0.5)"></rect></clipPath></defs></svg></a><a target="_blank" href="https://www.youtube.com/thesill" class="text-black hover:text-primary inline-block mr-6"><svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.4417 2.57812C19.2568 1.54724 18.3759 0.796509 17.3536 0.562134C15.8238 0.234375 12.9926 0 9.92931 0C6.86786 0 3.9913 0.234375 2.45967 0.562134C1.43919 0.796509 0.556462 1.49963 0.371579 2.57812C0.184883 3.75 0 5.39062 0 7.5C0 9.60938 0.184883 11.25 0.416893 12.4219C0.603589 13.4528 1.4845 14.2035 2.50499 14.4379C4.12906 14.7656 6.91318 15 9.97644 15C13.0397 15 15.8238 14.7656 17.4479 14.4379C18.4684 14.2035 19.3493 13.5004 19.536 12.4219C19.7209 11.25 19.9529 9.56177 20 7.5C19.9057 5.39062 19.6737 3.75 19.4417 2.57812ZM7.42432 10.7812V4.21875L13.085 7.5L7.42432 10.7812Z" fill="currentColor"></path></svg></a><a target="_blank" href="https://www.tiktok.com/@thesill" class="text-black hover:text-primary inline-block mr-6">
+                                                <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_406_3135)"><path d="M5.95739 17.9925C5.6017 17.9452 5.24953 17.875 4.90312 17.7823C3.84255 17.5161 2.88717 16.9414 2.16061 16.1325C1.43406 15.3236 0.96977 14.3177 0.827828 13.245C0.704058 12.5147 0.728106 11.7673 0.89858 11.0462C1.06905 10.3251 1.38256 9.64467 1.82095 9.04423C2.25933 8.44379 2.81387 7.93533 3.45243 7.54831C4.091 7.16129 4.8009 6.90339 5.541 6.78957C6.10453 6.70196 6.67845 6.70196 7.24199 6.78957C7.33944 6.78957 7.38374 6.78957 7.38374 6.93848C7.38374 7.98081 7.38374 9.01439 7.38374 10.048C7.00279 10.048 6.62184 9.97789 6.24974 9.99541C5.64017 10.0501 5.07144 10.3218 4.64936 10.7601C4.22728 11.1983 3.98059 11.7733 3.95517 12.3779C3.92044 12.9628 4.08848 13.5419 4.43156 14.0197C4.77464 14.4974 5.27224 14.8452 5.84221 15.0056C6.47249 15.1585 7.13756 15.0781 7.71202 14.7796C8.28648 14.4811 8.73063 13.9851 8.9607 13.3852C9.01388 13.197 9.04071 13.0025 9.04043 12.8071C9.04043 12.1852 9.04043 11.5545 9.04043 10.9326C9.04043 7.35892 9.04043 3.78811 9.04043 0.22023C9.03609 0.144378 9.03609 0.0683444 9.04043 -0.00750732H11.9906C11.9906 0.228989 11.9906 0.456726 12.0703 0.693223C12.1665 1.43517 12.4646 2.1374 12.9326 2.7251C13.4007 3.3128 14.0212 3.76394 14.7281 4.03045C15.2863 4.24067 15.871 4.35454 16.5 4.52096V7.4903C14.9117 7.45846 13.3692 6.95825 12.0703 6.05381V6.2903C12.0703 8.28738 12.0703 10.2786 12.0703 12.264C12.072 12.6581 12.0334 13.0513 11.9552 13.4377C11.7571 14.4919 11.2542 15.4666 10.5073 16.2439C9.7604 17.0212 8.80159 17.5677 7.74697 17.8173C7.42563 17.8912 7.10025 17.9468 6.77244 17.9837L5.95739 17.9925Z" fill="currentColor"></path></g><defs><clipPath id="clip0_406_3135"><rect width="15.75" height="18" fill="white" transform="translate(0.75)"></rect></clipPath></defs></svg></a><a target="_blank" href="https://www.linkedin.com/company/the-sill/" class="text-black hover:text-primary inline-block mr-6"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_406_3139)"><path d="M10.4461 6.05868H6.6696V17.1759H10.4461V10.7557C10.4466 10.4657 10.5109 10.1793 10.6343 9.91681C10.7578 9.65429 10.9374 9.42201 11.1606 9.23635C11.3816 9.03326 11.6513 8.89058 11.9438 8.82213C12.2362 8.75368 12.5414 8.76178 12.8297 8.84564C13.1181 8.9295 13.3799 9.08628 13.5898 9.30081C13.7997 9.51533 13.9505 9.78033 14.0277 10.0701C14.1294 10.4475 14.1762 10.8375 14.1669 11.2282V17.1481H17.9527V10.7094C17.9617 10.084 17.8836 9.46043 17.7207 8.85651C17.5174 8.00268 17.0499 7.23447 16.3846 6.66086C15.6284 6.04546 14.6784 5.71725 13.703 5.73442C13.0796 5.70369 12.4588 5.83321 11.8999 6.11059C11.3411 6.38797 10.8628 6.80392 10.511 7.31863L10.4461 7.38348V6.05868ZM4.75815 17.1759V6.05868H1.0466V17.1759H4.75815ZM2.90238 4.72461C3.13435 4.72461 3.36632 4.66902 3.58901 4.61344C3.9793 4.51746 4.32782 4.29756 4.58216 3.98681C4.83651 3.67605 4.98293 3.29125 4.9994 2.89027C5.02948 2.51338 4.94677 2.13606 4.76174 1.80619C4.57672 1.47631 4.29773 1.20873 3.96017 1.0374C3.46477 0.795542 2.90053 0.733311 2.3642 0.861378C2.02517 0.91256 1.70697 1.05652 1.44491 1.27729C1.18285 1.49806 0.987167 1.78701 0.879583 2.11206C0.75148 2.43613 0.717482 2.78969 0.78149 3.13218C0.845499 3.47466 1.00492 3.79218 1.24146 4.04831C1.45266 4.26502 1.70729 4.43479 1.9887 4.54654C2.2701 4.65829 2.57196 4.7095 2.87454 4.69682L2.90238 4.72461Z" fill="currentColor"></path><path d="M10.4464 6.05866V7.43904L10.5114 7.37419C10.8673 6.85251 11.353 6.43218 11.9207 6.15445C12.4884 5.87672 13.1187 5.75112 13.7497 5.78999C14.7251 5.77282 15.6751 6.10102 16.4313 6.71643C17.0966 7.29003 17.5641 8.05825 17.7674 8.91208C17.9303 9.516 18.0084 10.1396 17.9994 10.7649V17.25H14.1672V11.2282C14.1766 10.8375 14.1297 10.4475 14.0281 10.0701C13.9509 9.78031 13.8 9.51531 13.5901 9.30079C13.3802 9.08627 13.1184 8.92948 12.8301 8.84562C12.5417 8.76176 12.2365 8.75366 11.9441 8.82211C11.6517 8.89056 11.3819 9.03324 11.1609 9.23633C10.9378 9.42199 10.7581 9.65427 10.6347 9.91679C10.5112 10.1793 10.447 10.4657 10.4464 10.7557V17.1481H6.66992V6.03086L10.4464 6.05866Z" fill="currentColor"></path><path d="M4.75745 17.1481H1.0459V6.03088H4.75745V17.1481Z" fill="currentColor"></path><path d="M2.87454 4.69681C2.5685 4.70359 2.26454 4.64511 1.98293 4.5253C1.70132 4.40548 1.44854 4.22708 1.24146 4.00199C1.00492 3.74586 0.845499 3.42833 0.78149 3.08585C0.717482 2.74337 0.75148 2.38981 0.879583 2.06574C0.987167 1.74068 1.18285 1.45174 1.44491 1.23097C1.70697 1.0102 2.02517 0.866234 2.3642 0.815053C2.90053 0.686985 3.46477 0.749217 3.96017 0.991075C4.3056 1.16537 4.58991 1.44025 4.77547 1.77938C4.96104 2.1185 5.03912 2.50587 4.9994 2.89027C4.97435 3.29261 4.81856 3.67583 4.55567 3.98179C4.29277 4.28774 3.9371 4.49975 3.54262 4.58564C3.33848 4.64123 3.10651 4.65976 2.87454 4.69681Z" fill="currentColor"></path></g>
+                <defs><clipPath id="clip0_406_3139"><rect width="17.25" height="18" fill="white" transform="translate(0.75)"></rect></clipPath></defs></svg></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="content_exam">
+                <div class="content_exam-one">Plant</div>
+                <div class="content_exam-two"> Palace</div>
+            </div>
+            <div class="border__footer-finish"></div>
+
+
+           <div class="end">
+            <div class="end_left">
+                <span>Copyright 2023 - The Sill, Inc.</span>
+            </div>
+            <div class="end_right">
+                <a href="">Affiliate Program</a>   
+                <a href="">Terms of Use</a>
+                <a href="">Privacy Policy</a>
+                <a href="">ccessibility</a>
+                <a href="">A Do Not Sell My Info</a>
+            </div>
+           </div>
+        </div>
+        
+        
+        
+        
+   
+    </div>
+   
+    <script src="/js/product.js">
+
+    </script>
+</body>
+<script src="/js/exam.js"></script>
+<link rel="stylesheet" href="/css/css/home.css">
+<style>
+    #demo , #imgslidefl{
+        width: 650px;
+    }
+    #imgslidefl{
+        margin-bottom: 20px;
+    }
+    body{
+        margin: 0px 0px 0px 0px;
+    }
+    .footer{
+        
+        width: 1300px;
+    }
+</style>
+</html>
+
+
