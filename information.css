@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* .....................Information................................ */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mrg-15{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.fs-20{
+    font-size: 20px;
+}
+
+.ifm{
+    /* padding: 100px 0; */
+}
+.ifm-top{
+    margin-bottom: 30px;
+
+}
+.ifm-top p {
+    font-family: serif;
+    margin: 0 12px;
+    font-size: 12px;
+
+}
+.ifm-img{
+    width: 100%;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+.ifm-img img{
+    width: 890px;
+    height: 200px;
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    cursor: pointer;
+    
+}
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px; */
+}
+
+.section-sub-heading{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 25px;
+    opacity: 0.6;
+}
+#content .section-heading{
+    line-height: 45px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-align: center;
+}
+.about-title{
+    font-weight: 550;
+    color: #000;
+}
+.about-text {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.button_next{
+    display: flex;
+    text-align: center;
+}
+
+.button_next button {
+    display: flex;
+    padding: 6px 50px;
+    font-size: 20px;
+    color: white;
+    border:  1px solid #009a7b;
+    background-color: #009a7b;
+    border-radius: 3px;
+    margin: 0 43%;
+    /* position: relative;
+    bottom: 60px; */
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.button_next button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.row p{
+    font-size: 50px;
+    color: #009a7b;
+    margin-left: 100px;
+}
+#backtop{
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+}

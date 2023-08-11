@@ -1,0 +1,130 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mapstore{
+    display: flex;
+    background-color: rgb(236, 238, 241);
+}
+.storelocator{
+    background-color: rgb(229, 246, 246);
+    max-width: 530px;
+    margin-top: 100px;
+}
+.map{
+    float: right;
+}
+.tdstorelocator{
+    font-size: 68px;
+    margin-left: 50px;
+}
+.ttstorelocator{
+    margin-left: 50px;
+    margin-top: -40px;
+    font-size: 20px;
+}
+.allstore{
+
+    display: flex;
+    max-width: 1300px;
+    margin-left: 5%;
+}
+.store1{
+    flex-basis: 650px;
+}
+.store2{
+    margin-left: 5%;
+    flex-basis: 50%;
+}
+.storedislay{
+    display: flex;
+}
+.nation{
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.imgstore{
+    max-width: 220px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+.hrstore{
+    max-width: 100%;
+    margin-left: 0px;
+}
+.storeinformation{
+    margin-left: 15px;
+    max-width: 60%;
+    margin-top: 10px;
+}
+.namestore{
+    color: rgb(129, 127, 124);
+    font-size: 22px;
+   
+}
+.addressstore{
+    color: rgb(129, 127, 124);
+    font-size: 16px;
+}
+.tieudeevent{
+    padding-top: 40px;
+}
+.event{
+    background-color: rgb(242, 242, 244);
+}
+.events{
+    display: flex;
+    
+    max-width: 1300px;
+    margin-left: 5%;
+}
+.upcomingevents{
+    margin-left: 5%;
+    margin-top: 0px;
+    font-size: 2.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+
+.ev{
+   margin-right: 30px;
+   background-color: rgb(236, 238, 241);
+   margin-bottom: 30px;
+}
+.imgevent{
+    justify-content: center
+}
+.nameevent{
+    font-size: 36px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.dayevent{
+    margin-left: 25px;
+    font-size: 21px;
+}
+.informationevent{
+    margin-left: 25px;
+    font-size: 16px;
+}
+.slide{
+    max-width: 100%;
+}
+.slide i{
+    height: 46px;
+    width: 46px;
+    font-size: 1,2rem;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 46px;
+    background-color: rgb(242, 242, 244);
+    cursor: pointer;
+}
+.slide .carouse1{
+    font-size: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#demo{
+    margin-left: 5%;
+    margin-top: 40px;
+}

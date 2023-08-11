@@ -1,0 +1,208 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration:none
+  
+  
+}
+body{
+
+}
+
+
+.box1 {
+  padding-top: 30px;  
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin: 0 50px;
+ 
+}
+
+.box1__tex h2{
+  margin-bottom: 10px;
+  color: #00AB84;
+  font-size: 45px;
+
+}
+.box1__tex2 {
+  padding-right: 100px;
+  position: relative;
+ 
+}
+.box1__tex2 > h4{
+  font-weight:bolder;
+  cursor: pointer;
+}
+.box1__tex2:hover  h4{
+  color: #00AB84;
+}
+
+.box1__tex2 .dropdown{
+  
+ position:relative; 
+  
+}
+
+
+.box1__tex2 ul{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color:white;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  border: 1px solid #f5f3f1;
+  border-radius: 2px;
+}
+
+.box1__tex2 ul li{
+  list-style-type: none;
+ 
+}
+.box1__tex2 ul li:hover{
+  background-color: #23c59f;
+}
+
+.box1__tex2 ul a{
+  color: black;
+  display: block;
+  padding: 5px 10px;
+}
+.box1__tex2 ul a:hover{
+  color: white
+}
+.box1__tex2:hover ul{
+  display: block;
+
+}
+
+
+
+
+hr{
+  height: 0px;
+  border-color: inherit;
+  border-top-width: 1px;
+  margin-bottom: 3px;
+}
+
+
+
+
+
+
+
+.box2{
+  
+  margin: 30px 50px;
+  display: flex;
+
+}
+.box2__lef{
+  height: 100px;
+  width: 18rem;
+  margin-top: 10px;
+  
+}
+.box2__lef >a >p{
+  margin-top: 1rem;
+  font-weight: 500;
+  color: black;
+  
+  
+ 
+}
+
+
+.box2__right{
+
+ display: grid;
+ grid-template-columns: auto auto auto auto;
+ gap: 60px;
+
+
+}
+.box2__right-form{
+  width: 252px;
+ 
+
+}
+
+.right__form-img{
+  position: relative;
+}
+.right__form-img > img{
+  width: 252px;
+  height: 328px;
+  object-fit: cover;
+}
+
+.right__form-color{
+ display: flex;
+ opacity: 0;
+ 
+}
+
+.form__color-blue{
+  width: 25px;
+  height: 25px;
+  border-radius: 999999999999px;
+  background: #00AB84;
+  margin-right: 7px;
+  border: solid 1px #817F7C;
+  
+  
+}
+.form__color-red{
+  width: 25px;
+  height: 25px;
+  border-radius: 999999999999px;
+  background: red;
+  margin-left: 7px;
+  border: solid 1px #817F7C;
+
+}
+.right__form-text:hover .right__form-color{
+  opacity: 1;
+  transform: translatey(20px);
+}
+.right__form-text:hover p{
+  transform: translateY(20px);
+}
+.right__form-text {
+ position: relative;
+  color: black;
+  font-size: 21px;
+  
+}
+.right__form-text > span{
+font-size: 16px;
+color: #817F7C;
+opacity: 1;
+}
+.right__form-text:hover span{
+  opacity: 0;
+}
+.right__form-text:hover .right__form-pice{
+ transform: translateY(-10px);
+ position: absolute;
+ top:105px ;
+   
+}
+.right__form-text:hover .right__form-pice spam1{
+  margin-right: 121px;
+}
+.right__form-pice{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.right__form-pice > spam{
+  color: #817F7C;
+  font-size: 17px;
+}
